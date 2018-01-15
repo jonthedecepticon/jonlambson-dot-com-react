@@ -1,10 +1,11 @@
 /node_modules
+
+keys.js
 bundle.js
+
 npm-debug.log
 .DS_Store
 
 # IntelliJ
 *.iml
 /.idea
-
-/config
