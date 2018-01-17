@@ -68,12 +68,12 @@ class Sidebar extends Component{
             <div className="sidebar" data-color="black" data-image={image}>
               <div className="sidebar-background" style={bgImage}></div>
               <div className="logo">
-                <a href="/" className="simple-text logo-mini">
+                <a href="/pages/home-page" className="simple-text logo-mini">
                   <div className="logo-img">
                     <img src={logo} alt="react-logo" />
                   </div>
                 </a>
-                <a href="/" className="simple-text logo-normal">
+                <a href="/pages/home-page" className="simple-text logo-normal">
                   JL
                 </a>
                 </div>

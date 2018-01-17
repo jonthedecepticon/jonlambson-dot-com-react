@@ -72,7 +72,7 @@ class HeaderLinks extends Component{
                         <MenuItem eventKey={4.2}><i className="pe-7s-help1"></i> Help Center</MenuItem>
                         <MenuItem eventKey={4.3}><i className="pe-7s-tools"></i> Settings</MenuItem>
                         <MenuItem divider />
-                        <MenuItem eventKey={4.4}><i className="pe-7s-lock"></i> Lock Screen</MenuItem>
+                        <MenuItem eventKey={4.4}><i className="pe-7s-lock"></i> Home</MenuItem>
                         <MenuItem eventKey={4.5}><div className="text-danger"><i className="pe-7s-close-circle"></i> Log out</div></MenuItem>
                     </NavDropdown>
                 </Nav>

@@ -31,7 +31,7 @@ class PagesHeader extends Component{
             <Navbar collapseOnSelect inverse className="navbar-primary navbar-transparent navbar-absolute">
               <Navbar.Header>
                 <Navbar.Brand>
-                  <NavLink to={'/dashboard'} className="nav-link">
+                  <NavLink to={'/pages/home-page'} className="nav-link">
                     { this.state.width > 429 ? "JL":"JL" }
                   </NavLink>
                 </Navbar.Brand>
@@ -57,10 +57,10 @@ class PagesHeader extends Component{
                       <p>Register</p>
                     </NavLink>
                   </li>
-                  <li className={this.activeRoute('lock-screen-page')}>
-                    <NavLink to={'/pages/lock-screen-page'} className="nav-link">
+                  <li className={this.activeRoute('home-page')}>
+                    <NavLink to={'/pages/home-page'} className="nav-link">
                       <i className="fa fa-lock"></i>
-                      <p>Lock Screen</p>
+                      <p>Home</p>
                     </NavLink>
                   </li>
                 </ul>
