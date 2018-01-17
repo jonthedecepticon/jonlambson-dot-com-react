@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
-import {
-  Switch,
-  Route
-} from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Footer from 'components/Footer/Footer.jsx';
 import PagesHeader from 'components/Header/PagesHeader.jsx';
 
-// dinamically create pages routes
+// dynamically create pages routes
 import pagesRoutes from 'routes/pages.jsx';
 
 import bgImage from 'assets/img/full-screen-image-3.jpg';
@@ -23,6 +20,9 @@ class Pages extends Component{
         pageClass = " register-page";
       break;
       case "/pages/home-page":
+        pageClass = " lock-page";
+      break;
+      case "/api/current_user":
         pageClass = " lock-page";
       break;
       default:
