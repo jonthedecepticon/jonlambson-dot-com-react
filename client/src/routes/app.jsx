@@ -5,7 +5,6 @@ var appRoutes = [
     { path: "/pages/login-page", name: "Pages", component: Pages },
     { path: "/pages/register-page", name: "Pages", component: Pages },
     { path: "/pages/home-page", name: "Pages", component: Pages },
-    { path: "/api/current_user", name: "Pages", component: Pages },
     { path: "/", name: "Home", component: Dash }
 ];
 

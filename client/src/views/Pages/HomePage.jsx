@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import {
-  FormGroup, FormControl
-} from 'react-bootstrap';
+import { FormGroup, FormControl } from 'react-bootstrap';
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 
 import Button from 'elements/CustomButton/CustomButton.jsx';
 
 import avatar from 'assets/img/default-avatar.png';
 
-class LockScreenPage extends Component{
+class HomePage extends Component{
+  componentDidMount(){
+    this.props.fetchUser();
+  }
   render(){
     return (
       <form className="ng-untouched ng-pristine ng-valid">
@@ -31,4 +34,4 @@ class LockScreenPage extends Component{
   }
 }
 
-export default LockScreenPage;
+export default connect(null, actions)(HomePage);
