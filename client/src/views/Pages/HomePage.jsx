@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap';
-import { connect } from 'react-redux';
-import * as actions from '../../actions';
 
 import Button from 'elements/CustomButton/CustomButton.jsx';
 
 import avatar from 'assets/img/default-avatar.png';
 
 class HomePage extends Component{
-  componentDidMount(){
-    this.props.fetchUser();
-  }
   render(){
     return (
       <form className="ng-untouched ng-pristine ng-valid">
@@ -34,4 +29,4 @@ class HomePage extends Component{
   }
 }
 
-export default connect(null, actions)(HomePage);
+export default HomePage;
