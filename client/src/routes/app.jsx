@@ -5,8 +5,7 @@ var appRoutes = [
     { path: "/pages/login-page", name: "Pages", component: Pages },
     { path: "/pages/register-page", name: "Pages", component: Pages },
     { path: "/pages/lock-screen-page", name: "Pages", component: Pages },
-    { path: "/pages/dashboard", name: "Pages", component: Dash },
-    { path: "/", name: "Home", component: Pages }
+    { path: "/", name: "Home", component: Dash }
 ];
 
 export default appRoutes;
