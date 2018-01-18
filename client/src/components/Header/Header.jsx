@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar } from 'react-bootstrap';
+import { connect } from 'react-redux';
 
 // links that appear in navbar - they are separated from this component (navbar) so that we can redner them on responsive in sidebar as well
 
@@ -60,7 +61,7 @@ class Header extends Component{
         <Navbar.Header>
           <Navbar.Brand>
             {/* Here we create navbar brand, based on route name */}
-            <a href="#pablo">{this.makeBrand()}</a>
+            <a>{this.makeBrand()}</a>
           </Navbar.Brand>
           <Navbar.Toggle onClick={this.mobileSidebarToggle} />
         </Navbar.Header>
@@ -73,4 +74,10 @@ class Header extends Component{
   }
 }
 
-export default Header;
+function mapStateToProps(state) {
+  return {
+    auth: state.auth
+  };
+}
+
+export default connect(mapStateToProps)(Header);

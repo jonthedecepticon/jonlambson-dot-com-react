@@ -53,9 +53,6 @@ var dashRoutes = [
     },
     { path: "/charts", name: "Charts", icon: "pe-7s-graph1", component: Charts },
     { path: "/calendar", name: "Calendar", icon: "pe-7s-date", component: Calendar },
-    { collapse: true, path: "/pages", name: "Pages", state: "openPages", icon:"pe-7s-gift", views:
-        pages
-    },
     { redirect: true, path: "/", pathTo: "/pages/home-page", name: "Home" }
 ];
 export default dashRoutes;

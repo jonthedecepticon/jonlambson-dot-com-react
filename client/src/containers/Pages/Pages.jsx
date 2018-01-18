@@ -7,7 +7,11 @@ import PagesHeader from 'components/Header/PagesHeader.jsx';
 // dynamically create pages routes
 import pagesRoutes from 'routes/pages.jsx';
 
-import bgImage from 'assets/img/full-screen-image-3.jpg';
+function getRandomNum() {
+  return Math.floor(Math.random() * 60);
+}
+
+const bgImage = `https://source.unsplash.com/collection/468125/${getRandomNum()}`;
 
 class Pages extends Component{
   getPageClass(){
