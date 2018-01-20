@@ -24,10 +24,20 @@ class Pages extends Component{
         pageClass = " register-page";
       break;
       case "/pages/home-page":
-        pageClass = " lock-page";
+        // HACK: FIX CSS
+        pageClass = " lock-page home-page";
       break;
-      case "/api/current_user":
-        pageClass = " lock-page";
+      case "/pages/contact-page":
+        // HACK: FIX CSS
+        pageClass = " lock-page contact-page";
+      break;
+      case "/pages/portfolio-page":
+        // HACK: FIX CSS
+        pageClass = " lock-page portfolio-page";
+      break;
+      case "/pages/resume-page":
+        // HACK: FIX CSS
+        pageClass = " lock-page resume-page";
       break;
       default:
         pageClass = "";

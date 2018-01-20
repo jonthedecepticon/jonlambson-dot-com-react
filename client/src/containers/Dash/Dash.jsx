@@ -20,6 +20,7 @@ import dashRoutes from 'routes/dash.jsx';
 // style for notifications
 import { style } from "variables/Variables.jsx";
 
+
 class Dash extends Component{
   constructor(props){
     super(props);
@@ -29,6 +30,13 @@ class Dash extends Component{
     };
   }
   componentDidMount(){
+    // HACK: FIX ME LATER
+    var loc = window.location.href,
+    index = loc.indexOf('#');
+    if (index > 0) {
+       window.location = loc.substring(0, index);
+    }
+
     this.setState({_notificationSystem: this.refs.notificationSystem});
     if (window.matchMedia(`(min-width: 960px)`).matches && !this.isMac()) {
       Ps.initialize(this.refs.mainPanel, { wheelSpeed: 2, suppressScrollX: true });

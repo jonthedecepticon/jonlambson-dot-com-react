@@ -84,19 +84,19 @@ class PagesHeader extends Component{
             <Navbar.Collapse>
               <ul className="nav navbar-nav navbar-right">
                 <li>
-                  <NavLink to={'/'} className="nav-link">
+                  <NavLink to={'/pages/portfolio-page'} className="nav-link">
                     <i className="fa fa-suitcase"></i>
                     <p>Portfolio</p>
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={'/'} className="nav-link">
+                  <NavLink to={'/pages/contact-page'} className="nav-link">
                     <i className="fa fa-envelope-o"></i>
                     <p>Contact</p>
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={'/'} className="nav-link">
+                  <NavLink to={'/pages/resume-page'} className="nav-link">
                     <i className="fa fa-file-text-o"></i>
                     <p>Resume</p>
                   </NavLink>

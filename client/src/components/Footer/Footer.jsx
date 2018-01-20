@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 class Footer extends Component {
   render(){
@@ -8,29 +9,29 @@ class Footer extends Component {
           <nav className="pull-left">
             <ul>
               <li>
-                <a href="/">
+                <NavLink to={'/pages/home-page'}>
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/">
+                <NavLink to={'/pages/portfolio-page'}>
                   Portfolio
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/">
+                <NavLink to={'/pages/contact-page'}>
                   Contact
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a href="/">
+                <NavLink to={'/pages/resume-page'}>
                   Resume
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>
           <p className="copyright pull-right">
-            <i className="fa fa-code"></i>Web Development by Jon <strong>Lambson</strong> &copy; {1900 + (new Date()).getYear()} All rights reserved.
+            <i className="fa fa-code"></i>Web Development by <a href="https://www.linkedin.com/in/jon-lambson/" rel="noreferrer" target="_blank">Jon <strong>Lambson</strong></a> &copy; {1900 + (new Date()).getYear()} All rights reserved.
           </p>
         </div>
       </footer>
