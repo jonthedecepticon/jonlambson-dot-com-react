@@ -3,6 +3,7 @@ import {
     Navbar, Nav, NavItem, NavDropdown, MenuItem,
     FormGroup, FormControl, InputGroup
 } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 class HeaderLinks extends Component{
     render(){
@@ -68,8 +69,18 @@ class HeaderLinks extends Component{
                       </p>
                     </div>
                   )} noCaret id="basic-nav-dropdown-3" bsClass="dropdown-with-icons dropdown">
-                  <MenuItem eventKey={4.1} href="/tables/data-tables"><i className="pe-7s-mail"></i> Messages</MenuItem>
-                  <MenuItem eventKey={4.2} href="/pages/user-page"><i className="pe-7s-tools"></i> Settings</MenuItem>
+                  <li role="presentation">
+                    <NavLink eventKey={4.1} to={'/tables/data-tables'}>
+                      <i className="pe-7s-mail"></i>
+                      Messages
+                    </NavLink>
+                  </li>
+                  <li role="presentation">
+                    <NavLink eventKey={4.2} to={'/pages/user-page'}>
+                      <i className="pe-7s-tools"></i>
+                      Settings
+                    </NavLink>
+                  </li>
                   <MenuItem divider />
                   <MenuItem eventKey={4.3} href="/api/logout"><div className="text-danger"><i className="pe-7s-close-circle"></i> Log out</div></MenuItem>
                 </NavDropdown>

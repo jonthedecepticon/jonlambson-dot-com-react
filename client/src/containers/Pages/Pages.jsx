@@ -19,7 +19,11 @@ function getRandomNum() {
 
 let bgImage = `https://source.unsplash.com/collection/468125/${getRandomNum()}`;
 
-$.get(bgImage).fail(function() {
+$.get(bgImage)
+    .done(function() {
+      //Nothing to be done
+    })
+    .fail(function() {
       let one = bgImageBackup1;
       let two = bgImageBackup2;
       let three = bgImageBackup3;

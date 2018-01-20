@@ -29,7 +29,12 @@ function getRandomNum() {
 // backgroundImage for Sidebar
 let image = `https://source.unsplash.com/collection/151749/${getRandomNum()}`;
 
-$.get(image).fail(function() {
+$.get(image)
+    .done(function() {
+      //Nothing to be done
+    })
+    .fail(function() {
+      console.log('hello?');
       let one = bgImageBackup1;
       let two = bgImageBackup2;
       let three = bgImageBackup3;
@@ -95,14 +100,14 @@ class Sidebar extends Component{
       <div className="sidebar" data-color="black" data-image={image}>
         <div className="sidebar-background" style={bgImage}></div>
         <div className="logo">
-          <a href="/" className="simple-text logo-mini">
+          <NavLink to={'/'} className="simple-text logo-mini">
             <div className="logo-img">
               <img src={logo} alt="logo" />
             </div>
-          </a>
-          <a href="/" className="simple-text logo-normal">
-            JL
-          </a>
+          </NavLink>
+          <NavLink to={'/'} className="simple-text logo-normal">
+            Jl
+          </NavLink>
         </div>
         <div className="sidebar-wrapper" ref="sidebarWrapper">
           <div className="user">
