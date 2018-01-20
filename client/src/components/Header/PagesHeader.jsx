@@ -28,12 +28,14 @@ class PagesHeader extends Component{
   renderContent(){
     switch (this.props.auth) {
       case null:
+        // eslint-disable-next-line
         return (
           <ul className="nav navbar-nav navbar-right">
           </ul>
         )
       break;
       case false:
+        // eslint-disable-next-line
         return (
           <ul className="nav navbar-nav navbar-right">
             <li className={this.activeRoute('login-page')}>
@@ -52,6 +54,7 @@ class PagesHeader extends Component{
         )
       break;
       default:
+        // eslint-disable-next-line
         return (
           <ul className="nav navbar-nav navbar-right">
             <li>
@@ -71,6 +74,7 @@ class PagesHeader extends Component{
       }
     }
       render(){
+        // eslint-disable-next-line
         return (
           <Navbar collapseOnSelect inverse className="navbar-primary navbar-transparent navbar-absolute">
             <Navbar.Header>
