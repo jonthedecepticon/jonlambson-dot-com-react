@@ -1,8 +1,14 @@
 import React, {Component} from 'react';
 import { Switch, Route } from 'react-router-dom';
+import $ from 'jquery';
 
 import Footer from 'components/Footer/Footer.jsx';
 import PagesHeader from 'components/Header/PagesHeader.jsx';
+
+import bgImageBackup1 from 'assets/img/full-screen-image-1.jpg';
+import bgImageBackup2 from 'assets/img/full-screen-image-2.jpg';
+import bgImageBackup3 from 'assets/img/full-screen-image-3.jpg';
+import bgImageBackup4 from 'assets/img/full-screen-image-4.jpg';
 
 // dynamically create pages routes
 import pagesRoutes from 'routes/pages.jsx';
@@ -11,7 +17,16 @@ function getRandomNum() {
   return Math.floor(Math.random() * 60);
 }
 
-const bgImage = `https://source.unsplash.com/collection/468125/${getRandomNum()}`;
+let bgImage = `https://source.unsplash.com/collection/468125/${getRandomNum()}`;
+
+$.get(bgImage).fail(function() {
+      let one = bgImageBackup1;
+      let two = bgImageBackup2;
+      let three = bgImageBackup3;
+      let four = bgImageBackup4;
+      let items = [one, two, three, four]
+      bgImage = items[Math.floor(Math.random()*items.length)];
+    })
 
 class Pages extends Component{
   getPageClass(){

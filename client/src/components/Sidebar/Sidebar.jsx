@@ -2,12 +2,18 @@ import React, { Component } from 'react';
 import { Collapse } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
+import $ from 'jquery';
 
 // this is used to create scrollbars on windows devices like the ones from apple devices
 import * as Ps from 'perfect-scrollbar';
 import 'perfect-scrollbar/dist/css/perfect-scrollbar.min.css';
 
 import HeaderLinks from 'components/Header/HeaderLinks.jsx';
+
+import bgImageBackup1 from 'assets/img/full-screen-image-1.jpg';
+import bgImageBackup2 from 'assets/img/full-screen-image-2.jpg';
+import bgImageBackup3 from 'assets/img/full-screen-image-3.jpg';
+import bgImageBackup4 from 'assets/img/full-screen-image-4.jpg';
 
 // image for avatar in Sidebar
 import avatar from 'assets/img/default-avatar.png';
@@ -21,7 +27,16 @@ function getRandomNum() {
 }
 
 // backgroundImage for Sidebar
-const image = `https://source.unsplash.com/collection/151749/${getRandomNum()}`;
+let image = `https://source.unsplash.com/collection/151749/${getRandomNum()}`;
+
+$.get(image).fail(function() {
+      let one = bgImageBackup1;
+      let two = bgImageBackup2;
+      let three = bgImageBackup3;
+      let four = bgImageBackup4;
+      let items = [one, two, three, four]
+      image = items[Math.floor(Math.random()*items.length)];
+    })
 
 const bgImage = {backgroundImage: "url("+image+")"};
 

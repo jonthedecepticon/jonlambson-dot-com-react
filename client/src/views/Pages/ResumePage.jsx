@@ -13,7 +13,7 @@ class ResumePage extends Component {
           <div className="author">
             <img alt="..." className="avatar" src={avatar} />
           </div>
-          <h4>Tania Andrew</h4>
+          <h4>Resume Page</h4>
           <FormGroup>
             <FormControl
               type="password"
