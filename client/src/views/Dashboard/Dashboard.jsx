@@ -11,6 +11,7 @@ import {
   Geographies,
   Geography,
 } from "react-simple-maps";
+import { connect } from 'react-redux';
 
 import Card from 'components/Card/Card.jsx';
 import StatsCard from 'components/Card/StatsCard.jsx';
@@ -50,6 +51,12 @@ class Dashboard extends Component{
     }
     return tableRows;
   }
+  getDonationAmount(){
+    if (this.props.auth) {
+      const donationAmount = this.props.auth.credits;
+      return "$" + donationAmount;
+    }
+  }
   render(){
     return (
       <div className="main-content">
@@ -67,8 +74,8 @@ class Dashboard extends Component{
             <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-wallet text-success"></i>}
-                statsText="Revenue"
-                statsValue="$1,345"
+                statsText="Donations"
+                statsValue={this.getDonationAmount()}
                 statsIcon={<i className="fa fa-calendar-o"></i>}
                 statsIconText="Last day"
               />
@@ -253,4 +260,10 @@ class Dashboard extends Component{
   }
 }
 
-export default Dashboard;
+function mapStateToProps(state) {
+  return {
+    auth: state.auth
+  };
+}
+
+export default connect(mapStateToProps)(Dashboard);
