@@ -23,24 +23,6 @@ class HeaderLinks extends Component{
                   <p>Stats</p>
                 </NavItem>
                 <NavDropdown
-                  eventKey={2}
-                  title={(
-                    <div>
-                      <i className="fa fa-gavel"></i>
-                      <p className="hidden-md hidden-lg">
-                        Actions
-                        <b className="caret"></b>
-                      </p>
-                    </div>
-                  )} noCaret id="basic-nav-dropdown-1">
-                  <MenuItem eventKey={2.1}>Create New Post</MenuItem>
-                  <MenuItem eventKey={2.2}>Manage Something</MenuItem>
-                  <MenuItem eventKey={2.3}>Do Nothing</MenuItem>
-                  <MenuItem eventKey={2.4}>Submit to live</MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey={2.5}>Another action</MenuItem>
-                </NavDropdown>
-                <NavDropdown
                   eventKey={3}
                   title={(
                     <div>
@@ -70,13 +52,13 @@ class HeaderLinks extends Component{
                     </div>
                   )} noCaret id="basic-nav-dropdown-3" bsClass="dropdown-with-icons dropdown">
                   <li role="presentation">
-                    <NavLink eventKey={4.1} to={'/tables/data-tables'}>
+                    <NavLink to={'/tables/data-tables'}>
                       <i className="pe-7s-mail"></i>
                       Messages
                     </NavLink>
                   </li>
                   <li role="presentation">
-                    <NavLink eventKey={4.2} to={'/pages/user-page'}>
+                    <NavLink to={'/pages/user-page'}>
                       <i className="pe-7s-tools"></i>
                       Settings
                     </NavLink>

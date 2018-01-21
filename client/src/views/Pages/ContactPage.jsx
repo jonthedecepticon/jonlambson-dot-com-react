@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl } from 'react-bootstrap';
 
+import Stripe from '../../components/Stripe/Stripe';
+
 import Button from 'elements/CustomButton/CustomButton.jsx';
 
 import avatar from 'assets/img/default-avatar.png';

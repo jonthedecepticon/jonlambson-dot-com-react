@@ -19,6 +19,7 @@ import VectorMap from 'views/Maps/VectorMap.jsx';
 import Charts from 'views/Charts/Charts.jsx';
 import Calendar from 'views/Calendar/Calendar.jsx';
 import UserPage from 'views/Pages/UserPage.jsx';
+import Donate from 'views/Pages/DonatePage.jsx';
 
 import pagesRoutes from './pages.jsx';
 
@@ -54,9 +55,10 @@ var dashRoutes = [
     },
     { path: "/charts", name: "Charts", icon: "pe-7s-graph1", component: Charts },
     { path: "/calendar", name: "Calendar", icon: "pe-7s-date", component: Calendar },
-    { collapse: true, path: "/pages", name: "Pages", state: "openPages", icon:"pe-7s-gift", views:
-        pages
-    },
+    { path: "/donate", name: "Donate", icon:"pe-7s-gift", component: Donate },
+    // { collapse: true, path: "/pages", name: "Pages", state: "openPages", icon:"pe-7s-gift", views:
+    //     pages
+    // },
     { redirect: true, path: "/", pathTo: "/pages/home-page", name: "Home" }
 ];
 export default dashRoutes;

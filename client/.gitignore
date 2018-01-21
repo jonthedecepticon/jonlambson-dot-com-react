@@ -7,4 +7,6 @@ CHANGELOG.md
 # IntelliJ
 *.iml
 /.idea
+
 .env
+.env*
