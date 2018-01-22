@@ -3,10 +3,11 @@
 bundle.js
 npm-debug.log
 .DS_Store
-CHANGELOG.md
-# IntelliJ
-*.iml
-/.idea
+
+.env
+.env.development
+.env.test
+.env.production
 
 .env
 .env*
