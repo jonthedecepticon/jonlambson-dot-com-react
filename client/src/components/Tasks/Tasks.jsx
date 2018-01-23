@@ -29,43 +29,43 @@ export class Tasks extends Component{
             number = "checkbox"+i;
             tasks.push(
                 <tr key={i}>
-                    <td>
-                        <Checkbox
-                            number={number}
-                            isChecked={i === 1 || i === 2 ? true:false}
-                        />
-                    </td>
-                    <td>{tasks_title[i]}</td>
-                    <td className="td-actions text-right">
-                        <OverlayTrigger placement="top" overlay={edit}>
-                            <Button
-                                bsStyle="info"
-                                simple
-                                type="button"
-                                bsSize="xs"
-                            >
-                                <i className="fa fa-edit"></i>
-                            </Button>
-                        </OverlayTrigger>
+                  <td>
+                    <Checkbox
+                      number={number}
+                      isChecked={i === 1 || i === 2 ? true:false}
+                    />
+                  </td>
+                  <td>{tasks_title[i]}</td>
+                  <td className="td-actions text-right">
+                    <OverlayTrigger placement="top" overlay={edit}>
+                      <Button
+                        bsStyle="info"
+                        simple
+                        type="button"
+                        bsSize="xs"
+                      >
+                        <i className="fa fa-edit"></i>
+                      </Button>
+                    </OverlayTrigger>
 
-                        <OverlayTrigger placement="top" overlay={remove}>
-                            <Button
-                                bsStyle="danger"
-                                simple
-                                type="button"
-                                bsSize="xs"
-                            >
-                                <i className="fa fa-times"></i>
-                            </Button>
-                        </OverlayTrigger>
+                    <OverlayTrigger placement="top" overlay={remove}>
+                      <Button
+                        bsStyle="danger"
+                        simple
+                        type="button"
+                        bsSize="xs"
+                      >
+                        <i className="fa fa-times"></i>
+                      </Button>
+                    </OverlayTrigger>
 
-                    </td>
+                  </td>
                 </tr>
             );
         }
         return (
             <tbody>
-                {tasks}
+              {tasks}
             </tbody>
         );
     }
