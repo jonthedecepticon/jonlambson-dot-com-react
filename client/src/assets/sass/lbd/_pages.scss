@@ -132,7 +132,14 @@
 }
 
 .lock-page{
-
+    .resume-page-container{
+      text-align: center;
+      margin: auto;
+      width: 45%;
+      color: #FFFFFF;
+      display: block;
+    }
+    
     .user-profile{
         text-align: center;
         width: 240px;

@@ -20,7 +20,7 @@ class Donate extends Component {
           <Row>
             <Col md={6} mdOffset={3}>
               <Card
-                title="Donate"
+                title="Purchase Credits"
                 content={
                   <Stripe />
                 }

@@ -29,7 +29,6 @@ class VectorMaps extends Component{
                       World Map
                       <br />
                       <small>
-                        Looks great on any resolution. Made by our friends from <a href="https://github.com/zcreativelabs/react-simple-maps" target="_blank" rel="noopener noreferrer">zcreativelabs</a>.
                       </small>
                     </h3>
                     <Card

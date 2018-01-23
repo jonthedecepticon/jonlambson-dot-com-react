@@ -74,7 +74,7 @@ class Dashboard extends Component{
             <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-wallet text-success"></i>}
-                statsText="Donations"
+                statsText="Credits"
                 statsValue={this.getDonationAmount()}
                 statsIcon={<i className="fa fa-calendar-o"></i>}
                 statsIconText="Last day"
@@ -102,8 +102,8 @@ class Dashboard extends Component{
           <Row>
             <Col md={12}>
               <Card
-                title="Global Sales by Top Locations"
-                category="All products that were shipped"
+                title="Where in the World Is Carmen Sandiego?"
+                category="Recent Votes"
                 content={
                   <Row>
                     <Col md={5}>

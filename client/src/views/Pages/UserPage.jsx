@@ -13,8 +13,27 @@ import Button from 'elements/CustomButton/CustomButton.jsx';
 
 import avatar from "assets/img/default-avatar.png";
 
+let user = {};
 
 class UserPage extends Component {
+  getUser(){
+    if (this.props.auth) {
+      const user = this.props.auth
+      return user;
+    }
+  }
+  getUserName(){
+    if (this.props.auth) {
+      const user_name = this.props.auth.displayName;
+      return user_name;
+    }
+  }
+  getUserEmail(){
+    if (this.props.auth) {
+      const user_email= this.props.auth.emails[0].value;
+      return user_email;
+    }
+  }
   render() {
     return (
       <div className="main-content">
@@ -33,7 +52,7 @@ class UserPage extends Component {
                           type : "text",
                           bsClass : "form-control",
                           placeholder : "Company",
-                          defaultValue : "Creative Code Inc.",
+                          defaultValue : "",
                           disabled : true
                         },
                         {
@@ -41,13 +60,14 @@ class UserPage extends Component {
                           type : "text",
                           bsClass : "form-control",
                           placeholder : "Username",
-                          defaultValue : "tania123"
+                          defaultValue : ""
                         },
                         {
                           label : "Email address",
                           type : "email",
                           bsClass : "form-control",
-                          placeholder : "Email"
+                          placeholder : "Email",
+                          defaultValue: ""
                         }
                       ]}
                     />
@@ -59,14 +79,14 @@ class UserPage extends Component {
                           type : "text",
                           bsClass : "form-control",
                           placeholder : "First name",
-                          defaultValue : "Tania"
+                          defaultValue : ""
                         },
                         {
                           label : "Last name",
                           type : "text",
                           bsClass : "form-control",
                           placeholder : "Last name",
-                          defaultValue : "Andrew"
+                          defaultValue : ""
                         }
                       ]}
                     />
@@ -74,11 +94,11 @@ class UserPage extends Component {
                       ncols = {["col-md-12"]}
                       proprieties = {[
                         {
-                          label : "Adress",
+                          label : "Address",
                           type : "text",
                           bsClass : "form-control",
-                          placeholder : "Home Adress",
-                          defaultValue : "Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                          placeholder : "Home Address",
+                          defaultValue : ""
                         }
                       ]}
                     />
@@ -90,14 +110,14 @@ class UserPage extends Component {
                           type : "text",
                           bsClass : "form-control",
                           placeholder : "City",
-                          defaultValue : "City"
+                          defaultValue : ""
                         },
                         {
                           label : "Country",
                           type : "text",
                           bsClass : "form-control",
                           placeholder : "Country",
-                          defaultValue : "Country"
+                          defaultValue : ""
                         },
                         {
                           label : "Postal Code",
@@ -111,7 +131,7 @@ class UserPage extends Component {
                       <div className="col-md-12">
                         <FormGroup controlId="formControlsTextarea">
                           <ControlLabel>About Me</ControlLabel>
-                          <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."/>
+                          <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="Apparently, this user prefers to keep an air of mystery about them."/>
                         </FormGroup>
                       </div>
                     </div>
@@ -132,15 +152,13 @@ class UserPage extends Component {
               <UserCard
                 bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
                 avatar={avatar}
-                name="blsh"
-                userName="tania123"
+                name={this.getUserName()}
+                userName={this.getUserEmail()}
                 description={
                   <span>
-                    "Lamborghini Mercy
-                    <br />
-                    Your chick she so thirsty
-                    <br />
-                    I'm in that two seat Lambo"
+                    "Apparently, <br />
+                    this user prefers to keep an air <br />
+                    of mystery about them."
                   </span>
                 }
                 socials={
