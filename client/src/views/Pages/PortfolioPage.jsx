@@ -9,7 +9,7 @@ class PortfolioPage extends Component{
     return (
       <form className="ng-untouched ng-pristine ng-valid">
         <div className="user-profile">
-          <h4>Coming soon...</h4>
+          <h2>Coming soon...</h2>
         </div>
       </form>
     );
