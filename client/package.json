@@ -40,7 +40,7 @@
     "react-notification-system": "^0.2.15",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "react-scripts": "^1.1.0",
+    "react-scripts": "1.0.16",
     "react-select": "^1.0.0-rc.10",
     "react-simple-maps": "^0.8.4",
     "react-stepzilla": "^4.6.3",
