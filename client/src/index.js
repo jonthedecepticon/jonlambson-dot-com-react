@@ -9,7 +9,7 @@ import reducers from './reducers';
 
 import indexRoutes from './routes/index.jsx';
 
-import registerServiceWorker from './registerServiceWorker';
+// import registerServiceWorker from './registerServiceWorker';
 
 import './assets/css/bootstrap.min.css';
 import './assets/css/font-awesome.min.css';
@@ -38,4 +38,4 @@ ReactDOM.render((
     </BrowserRouter>
   </Provider>
 ), document.getElementById('root'));
-registerServiceWorker();
+// registerServiceWorker();
