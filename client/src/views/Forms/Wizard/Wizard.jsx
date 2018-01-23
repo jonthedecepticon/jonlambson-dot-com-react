@@ -21,27 +21,27 @@ class Wizard extends Component{
     render(){
         return (
             <div className="main-content">
-                <Grid fluid>
-                    <Row>
-                        <Col md={8} mdOffset={2}>
-                            <Card
-                                wizard
-                                id="wizardCard"
-                                textCenter
-                                title="Awesome Wizard"
-                                category="Split a complicated flow in multiple steps"
-                                content={
-                                    <StepZilla
-                                        steps={steps}
-                                        stepsNavigation={false}
-                                        nextButtonCls="btn btn-prev btn-info btn-fill pull-right btn-wd"
-                                        backButtonCls="btn btn-next btn-default btn-fill pull-left btn-wd"
-                                    />
-                                }
-                            />
-                        </Col>
-                    </Row>
-                </Grid>
+              <Grid fluid>
+                <Row>
+                  <Col md={8} mdOffset={2}>
+                    <Card
+                      wizard
+                      id="wizardCard"
+                      textCenter
+                      title="Create a Survey"
+                      category="Mass email a survey to your friends!"
+                      content={
+                        <StepZilla
+                          steps={steps}
+                          stepsNavigation={false}
+                          nextButtonCls="btn btn-prev btn-info btn-fill pull-right btn-wd"
+                          backButtonCls="btn btn-next btn-default btn-fill pull-left btn-wd"
+                        />
+                      }
+                    />
+                  </Col>
+                </Row>
+              </Grid>
             </div>
         );
     }
