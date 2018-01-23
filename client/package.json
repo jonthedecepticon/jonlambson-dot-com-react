@@ -14,6 +14,9 @@
       "target": "http://localhost:5000"
     }
   },
+  "devDependencies": {
+    "react-scripts": "1.0.16"
+  },
   "dependencies": {
     "axios": "^0.17.1",
     "chartist": "^0.10.1",
