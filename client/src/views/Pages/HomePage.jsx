@@ -5,7 +5,7 @@ class HomePage extends Component{
     return (
       <form className="ng-untouched ng-pristine ng-valid">
         <div className="user-profile">
-          <h4>Welcome...</h4>
+          <h2>Welcome...</h2>
         </div>
       </form>
     );
