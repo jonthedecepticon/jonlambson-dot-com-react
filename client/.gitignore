@@ -4,10 +4,6 @@ bundle.js
 npm-debug.log
 .DS_Store
 
-.env
 .env.development
 .env.test
 .env.production
-
-.env
-.env*
