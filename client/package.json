@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "9.2.0",
-    "npm": "5.5.1"
+    "node": "8.1.1",
+    "npm": "5.0.3"
   },
   "proxy": {
     "/auth/google": {
@@ -13,9 +13,6 @@
     "/api/*": {
       "target": "http://localhost:5000"
     }
-  },
-  "devDependencies": {
-    "react-scripts": "0.8.4"
   },
   "dependencies": {
     "axios": "^0.17.1",
