@@ -7,6 +7,7 @@ import { Map, Marker, GoogleApiWrapper } from 'google-maps-react';
 
 import MapCard from 'components/Card/MapCard.jsx';
 
+
 class GoogleMaps extends Component{
   render(){
     return (
@@ -65,5 +66,5 @@ class GoogleMaps extends Component{
       }
     }
     export default GoogleApiWrapper({
-      apiKey: "YOUR_API_KEY_HERE"
+      apiKey: "AIzaSyBst7JWOdrcFcGwH9bE2efsI-LnXM2C6N0"
     })(GoogleMaps);

@@ -34,7 +34,6 @@ $.get(image)
       //Nothing to be done
     })
     .fail(function() {
-      console.log('hello?');
       let one = bgImageBackup1;
       let two = bgImageBackup2;
       let three = bgImageBackup3;
@@ -124,16 +123,10 @@ class Sidebar extends Component{
               <Collapse in={this.state.openAvatar}>
                 <ul className="nav">
                   <li>
-                    <a href="/pages/user-page">
-                      <span className="sidebar-mini">MP</span>
-                      <span className="sidebar-normal">My Profile</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/pages/user-page">
+                    <NavLink to={'/pages/user-page'}>
                       <span className="sidebar-mini">EP</span>
                       <span className="sidebar-normal">Edit Profile</span>
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </Collapse>
