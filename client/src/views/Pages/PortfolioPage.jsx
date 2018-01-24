@@ -15,10 +15,10 @@ import Button from 'elements/CustomButton/CustomButton.jsx';
 // react component that creates an input in which you add words that become like tags
 import TagsInput from 'react-tagsinput';
 
-import img1 from 'assets/img/blog-1.jpg';
 import spotify from 'assets/img/spotifyClone.png';
 import personalWebsite from 'assets/img/personalWebsite.png';
 import magicmirror from 'assets/img/magicmirror.jpg';
+import hardware from 'assets/img/hardware.jpg';
 
 class PortfolioPage extends Component{
   constructor(props){
@@ -128,7 +128,7 @@ class PortfolioPage extends Component{
                         <tr>
                           <td>
                             <div className="img-container">
-                              <img alt="..." src={img1} />
+                              <img alt="..." src={hardware} />
                             </div>
                             <a href="http://jonthedecepti.com/">
                               jonthedecepti.com
