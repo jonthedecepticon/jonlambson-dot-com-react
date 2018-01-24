@@ -103,7 +103,7 @@ class PortfolioPage extends Component{
                             <TagsInput value={this.state.spotifyCloneTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
                           </td>
                           <td style={{textAlign: "left"}}>
-                            I think Spotify is one of my favorite companies to date. In this project I am using my friend's design and building a replica of Spotify. Features include Sign up/Login, Control the music with all the usual controls such as play, pause, skip, previous, shuffle, repeat etc. Create and customize playlists. I am building this project because I want to improve my Vuejs skills and better understand PHP and MYSQL.
+                            I think Spotify is one of my favorite companies and products out there. In this project I am using my friend's design and building a replica of Spotify. Features include Sign up/Login, Control the music with all the usual controls such as play, pause, skip, previous, shuffle, repeat etc. Create and customize playlists. I am building this project because I want to improve my Vuejs skills and better understand PHP and MYSQL.
                           </td>
                           { actionsPost }
                         </tr>
@@ -130,8 +130,8 @@ class PortfolioPage extends Component{
                             <div className="img-container">
                               <img alt="..." src={hardware} />
                             </div>
-                            <a href="http://jonthedecepti.com/">
-                              jonthedecepti.com
+                            <a href="">
+                              Coming Soon...
                             </a>
                           </td>
                           <td className="td-name">
