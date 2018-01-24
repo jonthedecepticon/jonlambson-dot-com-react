@@ -1,6 +1,7 @@
 import Dashboard from 'views/Dashboard/Dashboard.jsx';
 import GoogleMaps from 'views/Maps/GoogleMaps.jsx';
 import FullScreenMap from 'views/Maps/FullScreenMap.jsx';
+import ValidationForms from 'views/Forms/ValidationForms.jsx';
 import VectorMap from 'views/Maps/VectorMap.jsx';
 import Calendar from 'views/Calendar/Calendar.jsx';
 import UserPage from 'views/Pages/UserPage.jsx';
@@ -17,6 +18,7 @@ var dashRoutes = [
         { path: "/maps/full-screen-maps", name: "Full Screen Map", mini: "FSM", component: FullScreenMap },
         { path: "/maps/vector-maps", name: "Vector Map", mini: "VM", component: VectorMap }]
     },
+    { path: "/forms/validation-forms", name: "Survey", icon: "pe-7s-note2", component: ValidationForms },
     { path: "/calendar", name: "Calendar", icon: "pe-7s-date", component: Calendar },
     { path: "/donate", name: "Purchase Credits", icon:"pe-7s-gift", component: Donate },
     { collapse: true, path: "/pages", name: "Pages", state: "openPages", icon:"pe-7s-news-paper", views:

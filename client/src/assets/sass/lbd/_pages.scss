@@ -100,10 +100,10 @@
 }
 
 .login-page,
-.lock-page{
-    > .content{
+  .lock-page{
+      > .content{
         padding-top: 22vh;
-    }
+      }
 }
 
 .login-page{
@@ -139,7 +139,18 @@
       color: #FFFFFF;
       display: block;
     }
-    
+
+    .portfolio-page-container{
+      margin-top: -50px;
+      text-align: center;
+      margin: auto;
+      width: 75%;
+      display: block;
+      .about-me-section {
+        color: #FFFFFF;
+      }
+    }
+
     .user-profile{
         text-align: center;
         width: 240px;

@@ -18,10 +18,12 @@ class HeaderLinks extends Component{
                 </FormGroup>
               </Navbar.Form>
               <Nav pullRight>
-                <NavItem eventKey={3} href="/dashboard">
-                  <i className="fa fa-line-chart"></i>
-                  <p>Stats</p>
-                </NavItem>
+                <li role="presentation">
+                  <NavLink to={'/dashboard'}>
+                    <i className="fa fa-line-chart"></i>
+                    <p>Stats</p>
+                  </NavLink>
+                </li>
                 <NavDropdown
                   eventKey={3}
                   title={(

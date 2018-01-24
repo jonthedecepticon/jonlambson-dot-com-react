@@ -55,7 +55,6 @@ class Pages extends Component{
         pageClass = " lock-page portfolio-page";
       break;
       case "/pages/resume-page":
-        // HACK: FIX CSS
         pageClass = " lock-page resume-page";
       break;
       default:

@@ -1,3 +1,16 @@
+.react-tagsinput-tag a::before{
+  content: "\f00c"
+}
+.react-tagsinput-input {
+  display: none;
+}
+.react-tagsinput {
+  border-bottom:none;
+}
+.react-tagsinput-tag:hover {
+  padding-left: 8px;
+  padding-right: 16px;
+}
 @media (min-width: 992px){
     .typo-line{
         padding-left: 140px;

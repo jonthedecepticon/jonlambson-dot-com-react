@@ -7612,6 +7612,15 @@ form label.radio, form label.checkbox {
   color: #FFFFFF;
   display: block; }
 
+.lock-page .portfolio-page-container {
+  margin-top: -50px;
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  display: block; }
+  .lock-page .portfolio-page-container .about-me-section {
+    color: #FFFFFF; }
+
 .lock-page .user-profile {
   text-align: center;
   width: 240px;
