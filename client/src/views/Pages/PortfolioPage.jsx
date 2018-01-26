@@ -159,7 +159,7 @@ class PortfolioPage extends Component{
                             <TagsInput value={this.state.jonthedecepticonTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
                           </td>
                           <td style={{textAlign: "left"}}>
-                            <h6>Web Based Dashboard</h6>
+                            <h6>IoT Dashboard</h6>
                             This project is a fullstack web based dashboard that will display information from various sensors and devices. There will be a section that provides toggles and actions that communicates between various devices.
                           </td>
                           { actionsPost }
