@@ -19,6 +19,7 @@ import spotify from 'assets/img/spotifyClone.png';
 import personalWebsite from 'assets/img/personalWebsite.png';
 import magicmirror from 'assets/img/magicmirror.jpg';
 import hardware from 'assets/img/hardware.jpg';
+import dapp from 'assets/img/decentralizedInternet.jpg';
 
 class PortfolioPage extends Component{
   constructor(props){
@@ -27,7 +28,8 @@ class PortfolioPage extends Component{
           jonlambsondotcomTags: ["MongoDB","Expressjs","React", "Redux", "Passport", "mongoose", "nodejs", "Stripe", "sendgrid", "sass"],
           jonthedecepticonTags: ["nodejs", "javascript", "Raspberry Pi 3", "arduino Uno", "Vuejs", "wit.ai"],
           spotifyCloneTags: ["Vuejs", "PHP", "Mysql", "Sass"],
-          magicmirrorTags: ["Raspberry Pi", "electron", "Javascript", "linux"]
+          magicmirrorTags: ["Raspberry Pi", "electron", "Javascript", "linux"],
+          dappTags: ["React", "Geth", "Web3", "Truffle", "TestRPC", "MetaMask", "Solidity", "Ethereum"]
       };
   }
   render(){
@@ -103,7 +105,26 @@ class PortfolioPage extends Component{
                             <TagsInput value={this.state.spotifyCloneTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
                           </td>
                           <td style={{textAlign: "left"}}>
+                            <h6>Spotify Clone</h6>
                             I think Spotify is one of my favorite companies and products out there. In this project I am using my friend's design and building a replica of Spotify. Features include Sign up/Login, Control the music with all the usual controls such as play, pause, skip, previous, shuffle, repeat etc. Create and customize playlists. I am building this project because I want to improve my Vuejs skills and better understand PHP and MYSQL.
+                          </td>
+                          { actionsPost }
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="img-container">
+                              <img alt="..." src={dapp} style={{height: "100%"}}/>
+                            </div>
+                            <a>
+                              In the works...
+                            </a>
+                          </td>
+                          <td className="td-name">
+                            <TagsInput value={this.state.dappTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
+                          </td>
+                          <td style={{textAlign: "left"}}>
+                            <h6>Decentralized Application</h6>
+                            Attempting to keep up with the latest trends and hot new frameworks, I am working on building out a simple decentralized app, where I can develop, compile, test Smart Contracts.
                           </td>
                           { actionsPost }
                         </tr>
