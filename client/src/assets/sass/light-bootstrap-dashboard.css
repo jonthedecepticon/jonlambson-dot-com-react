@@ -5011,6 +5011,13 @@ h1 .subtitle {
   margin-top: -1px;
   right: 8px; }
 
+.socail-media-container .btn {
+  margin: 10px; }
+
+.btn-github {
+  border-color: snow !important;
+  color: snow !important; }
+
 /*     General overwrite     */
 #loader {
   position: absolute;

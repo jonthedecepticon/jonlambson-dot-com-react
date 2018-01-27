@@ -53,12 +53,33 @@ class PortfolioPage extends Component{
           <div className="about-me-section" style={{marginTop: "-70px"}}>
             <h2>About me...</h2>
             <h4>
-              My name is Jon Lambson and I am a Full Stack Web Developer and just getting into IoT development. I am from Pleasant Grove, Utah. I love being the outdoors, hiking, riding my bicycle, and snowboarding. If I'm not outside I am playing violin/guitar or I am experimenting with new languages and frameworks.
+              My name is Jon Lambson, I am a Full Stack Web Developer and just getting into IoT development. I am from Pleasant Grove, Utah. I love being the outdoors, hiking, riding my bicycle, and snowboarding. If I'm not outside I am playing the violin/guitar or I am sitting infront of my computer experimenting with new languages and frameworks.
             </h4>
             <h4 className="">
               Recently, I have taken an interest to IoT development. I really enjoy building projects with Raspberry Pi's and Arduino's and playing around with C.
             </h4>
-            <br />
+            <div className="socail-media-container">
+              <a href="https://github.com/jonthedecepticon" target="_blank">
+                <Button round github>
+                  <i className="fa fa-github"></i>
+                </Button>
+              </a>
+              <a href="https://www.linkedin.com/in/jon-lambson/" target="_blank">
+                <Button round linkedin>
+                  <i className="fa fa-linkedin"></i>
+                </Button>
+              </a>
+              <a href="https://www.facebook.com/jon.lambson" target="_blank">
+                <Button round facebook>
+                  <i className="fa fa-facebook"> </i>
+                </Button>
+              </a>
+              <a href="https://twitter.com/JonLambson" target="_blank">
+                <Button round twitter>
+                  <i className="fa fa-twitter"></i>
+                </Button>
+              </a>
+            </div>
             <br />
           </div>
           <Grid fluid>

@@ -29,7 +29,7 @@ class SurveyForm extends Component {
         <Grid fluid>
           <Row>
             <Col md={12}>
-              <form onSubmit={this.props.handleSubmit((values) => console.log(values))}>
+              <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
                 <Card
                   title="Create Survey"
                   content={
@@ -80,5 +80,6 @@ function validate(values) {
 
 export default reduxForm({
   validate: validate,
-  form: 'surveyForm'
+  form: 'surveyForm',
+  destroyOnUnmount: false
 })(SurveyForm);

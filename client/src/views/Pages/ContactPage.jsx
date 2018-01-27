@@ -92,5 +92,6 @@ function validate(values) {
 
 export default reduxForm({
   validate: validate,
-  form: 'contactForm'
+  form: 'contactForm',
+  destroyOnUnmount: false
 })(ContactPage);
