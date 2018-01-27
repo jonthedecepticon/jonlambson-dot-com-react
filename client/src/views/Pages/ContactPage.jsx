@@ -9,6 +9,8 @@ import Button from 'elements/CustomButton/CustomButton.jsx';
 import ContactField from '../Forms/ContactMe/ContactField';
 import ContactFieldTextarea from '../Forms/ContactMe/ContactFieldTextarea';
 
+import validateEmails from '../../utils/validateEmails';
+
 
 class ContactPage extends Component{
   constructor(props){
@@ -75,6 +77,9 @@ function validate(values) {
   if (!values.fullName) {
     errors.fullName = 'You must provide a name'
   }
+
+  errors.email = validateEmails(values.email || '');
+
   if (!values.email) {
     errors.email = 'You must provide an email address'
   }
@@ -82,7 +87,6 @@ function validate(values) {
     errors.message = 'You must provide a message'
   }
 
-  console.log(errors);
   return errors;
 }
 

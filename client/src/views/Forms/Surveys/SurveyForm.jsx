@@ -10,6 +10,8 @@ import Card from 'components/Card/Card.jsx';
 
 import Button from 'elements/CustomButton/CustomButton.jsx';
 
+import validateEmails from '../../../utils/validateEmails';
+
 class SurveyForm extends Component {
   renderFields(){
      return (
@@ -65,9 +67,13 @@ function validate(values) {
   if (!values.body) {
     errors.body = 'You must provide a body'
   }
+
+  errors.emails = validateEmails(values.emails || '');
+
   if (!values.emails) {
     errors.emails = 'You must provide at least one email address'
   }
+
 
   return errors;
 }

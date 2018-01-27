@@ -20,13 +20,15 @@ import personalWebsite from 'assets/img/personalWebsite.png';
 import magicmirror from 'assets/img/magicmirror.jpg';
 import hardware from 'assets/img/hardware.jpg';
 import dapp from 'assets/img/decentralizedInternet.jpg';
+import podiumcoin from 'assets/img/podiumcoin.png';
 
 class PortfolioPage extends Component{
   constructor(props){
       super(props);
       this.state = {
-          jonlambsondotcomTags: ["MongoDB","Expressjs","React", "Redux", "Passport", "mongoose", "nodejs", "Stripe", "sendgrid", "sass"],
-          jonthedecepticonTags: ["nodejs", "javascript", "Raspberry Pi 3", "arduino Uno", "Vuejs", "wit.ai"],
+          jonlambsondotcomTags: ["MongoDB","Expressjs","React", "Redux", "Passport", "mongoose", "mlab", "node", "Stripe", "sendgrid", "sass", "heroku"],
+          podiumcoinTags: ["Firebase","Expressjs","Angularjs", "node", "Stripe", "sass", "Digital Ocean", "Nginx", "Facebook"],
+          jonthedecepticonTags: ["node", "javascript", "Raspberry Pi 3", "arduino Uno", "Vuejs", "wit.ai"],
           spotifyCloneTags: ["Vuejs", "PHP", "Mysql", "Sass"],
           magicmirrorTags: ["Raspberry Pi", "electron", "Javascript", "linux"],
           dappTags: ["React", "Geth", "Web3", "Truffle", "TestRPC", "MetaMask", "Solidity", "Ethereum"]
@@ -51,10 +53,10 @@ class PortfolioPage extends Component{
           <div className="about-me-section" style={{marginTop: "-70px"}}>
             <h2>About me...</h2>
             <h4>
-              My name is Jon Lambson and I am a full stack web developer and just getting into IoT development. I am from Pleasant Grove, Utah. I am currently still going through college. I have been attending off and on do to a hectic work and personal life schedule. I hope to graduate with a bachelor’s degree in Computer Science from Utah Valley University. Unfortunaly, I do not have an expected graduation date since I haven't been able to focus on my schooling. I plan to go back as soon as possilbe and finish out my degree. I love being creative, whether that means drawing, painting, playing the violin/guitar/piano, etc. I have a very strong desire to create something beautiful.
+              My name is Jon Lambson and I am a Full Stack Web Developer and just getting into IoT development. I am from Pleasant Grove, Utah. I love being the outdoors, hiking, riding my bicycle, and snowboarding. If I'm not outside I am playing violin/guitar or I am experimenting with new languages and frameworks.
             </h4>
             <h4 className="">
-              Recently, I have taken an interest to IoT development and am still in the very beginner stages (but you gotta start somewhere, right?). I really enjoy building projects with Raspberry Pi's and Arduino's. <code>sudo apt-get blah</code> is cool and all, but learning how the project is built from the ground up is where the real fun is!!! I have a check list of IoT type projects I want to build as a hobby, I'll make sure to post them below when they are finished!
+              Recently, I have taken an interest to IoT development. I really enjoy building projects with Raspberry Pi's and Arduino's and playing around with C.
             </h4>
             <br />
             <br />
@@ -86,12 +88,32 @@ class PortfolioPage extends Component{
                           </td>
                           <td style={{textAlign: "left"}}>
                             <h6>Personal Website</h6>
-                            M.E.R.N Stack build from the ground up. Zero boiler plate code. Hosted with Heroku. Two Mongo Databases one for production and one for development. Frontend server for React, Backend server for Express API routes. Using Passport for user authentication.
+                            M.E.R.N Stack built from the ground up, and zero boiler plate code. Hosted with Heroku. Two Mongo Databases one for production and one for development. Front end server for React, Back end server for Express API routes. Using Passport for user authentication.
                             If you sign up, you will see a lot more features in the admin dashboard. If you'd rather not sign up, that's okay too because I left the some of the authenticated routes open just for fun and for you to test <a href="/dashboard">Go to admin dashboard</a>. Other routes and features will require a logged in user.
-                            Stripe API, send out mass amounts of emails using Sendgrid API. Packed with a bunch of random charts and maps.
+                            Set up Stripe API, which requires "credit" to send out mass amounts of emails using Sendgrid API. The admin dashboard is packed with a bunch of random charts and maps.
                           </td>
                           { actionsPost }
                         </tr>
+
+                        <tr>
+                          <td>
+                            <div className="img-container">
+                              <img alt="..." src={podiumcoin} style={{height: "100%"}} />
+                            </div>
+                            <a href="http://podiumcoin.com/">
+                              podiumcoin.com
+                            </a>
+                          </td>
+                          <td className="td-name">
+                            <TagsInput value={this.state.podiumcoinTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
+                          </td>
+                          <td style={{textAlign: "left"}}>
+                            <h6>Voting / Sharing Platform</h6>
+                            M.E.A.N Stack built from the ground up and hosted with Digital Ocean. This project was built for Daplie, an admin team member would post an article in 3 categories. Articles would be displayed in order of "trending" or most popular. Sharing on Facebook or voting for an article would increase the articles visibility. All information stored and authentication using Firebase. Stripe was implemented for donation to the article owner, but never put into production. <span className="text-muted">**Daplie is the owner of the Firebase account linked to this project, it may be disconnected at any time.**</span>
+                          </td>
+                          { actionsPost }
+                        </tr>
+
                         <tr>
                           <td>
                             <div className="img-container">
@@ -106,7 +128,7 @@ class PortfolioPage extends Component{
                           </td>
                           <td style={{textAlign: "left"}}>
                             <h6>Spotify Clone</h6>
-                            I think Spotify is one of my favorite companies and products out there. In this project I am using my friend's design and building a replica of Spotify. Features include Sign up/Login, Control the music with all the usual controls such as play, pause, skip, previous, shuffle, repeat etc. Create and customize playlists. I am building this project because I want to improve my Vuejs skills and better understand PHP and MYSQL.
+                            I think Spotify is one of my favorite companies and products out there. In this project I am using my friend's design and building a replica of Spotify. Features include Sign up/Login, controling the music with all the usual controls such as play, pause, skip, previous, shuffle, repeat etc. Create and customize playlists. I am building this project because I want to improve my Vuejs skills and better understand PHP and MYSQL.
                           </td>
                           { actionsPost }
                         </tr>
