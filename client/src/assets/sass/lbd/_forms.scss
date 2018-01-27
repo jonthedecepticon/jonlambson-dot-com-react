@@ -1,6 +1,7 @@
 form{
 
     label{
+      font-weight: 400;
         &.radio,
         &.checkbox{
             font-size: $font-size-base;

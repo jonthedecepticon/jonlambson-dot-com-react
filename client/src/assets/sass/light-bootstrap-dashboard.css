@@ -5552,10 +5552,12 @@ fieldset[disabled] .form-control {
   filter: Alpha(Opacity=35);
   /* For IE8 - See #6059 */ }
 
-form label.radio, form label.checkbox {
-  font-size: 14px;
-  text-transform: none;
-  cursor: pointer; }
+form label {
+  font-weight: 400; }
+  form label.radio, form label.checkbox {
+    font-size: 14px;
+    text-transform: none;
+    cursor: pointer; }
 
 .form-horizontal .checkbox,
 .form-horizontal .radio {

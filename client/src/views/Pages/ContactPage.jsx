@@ -6,6 +6,9 @@ import SweetAlert from 'react-bootstrap-sweetalert';
 
 import Button from 'elements/CustomButton/CustomButton.jsx';
 
+import ContactField from '../Forms/ContactMe/ContactField';
+import ContactFieldTextarea from '../Forms/ContactMe/ContactFieldTextarea';
+
 
 class ContactPage extends Component{
   constructor(props){
@@ -38,42 +41,52 @@ class ContactPage extends Component{
         alert: null
       });
     }
+    renderFields(){
+       return (
+        <div>
+          <Field type="text" name="fullName" placeholder="Full Name" component={ContactField} />
+          <Field type="text" name="email" placeholder="Email Address" component={ContactField} />
+          <Field type="text" name="message" placeholder="Message" component={ContactFieldTextarea} />
+        </div>
+      )
+    }
   render(){
     return (
-      <form className="ng-untouched ng-pristine ng-valid">
+      <form onSubmit={this.props.handleSubmit((values) => console.log(values))}>
         <div className="user-profile">
           <h2>Want to work with me?</h2>
           <h4>Drop me a line...</h4>
           <FormGroup>
-            <FormControl
-              placeholder="Enter name"
-              type="text"
-            />
+            {this.renderFields()}
           </FormGroup>
-          <FormGroup>
-            <FormControl
-              placeholder="Enter email"
-              type="email"
-            />
-          </FormGroup>
-          <FormGroup>
-            <FormControl
-              componentClass="textarea"
-              style={{ height: 100 }}
-              placeholder="Enter message"
-              type="text"
-            />
-          </FormGroup>
-          <Button wd neutral round onClick={this.successAlert.bind(this)}>
+          <Button wd neutral round type="submit" onClick={this.successAlert.bind(this)}>
             Send Message
           </Button>
-          {this.state.alert}
+          {/* {this.state.alert} */}
         </div>
       </form>
     );
   }
 }
 
+function validate(values) {
+  const errors = {};
+
+  if (!values.fullName) {
+    errors.fullName = 'You must provide a name'
+  }
+  if (!values.email) {
+    errors.email = 'You must provide an email address'
+  }
+  if (!values.message) {
+    errors.message = 'You must provide a message'
+  }
+
+  console.log(errors);
+  return errors;
+}
+
 export default reduxForm({
+  validate: validate,
   form: 'contactForm'
 })(ContactPage);
