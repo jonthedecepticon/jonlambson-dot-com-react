@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
+import { reduxForm, Field } from 'redux-form';
 
 import SweetAlert from 'react-bootstrap-sweetalert';
 
@@ -73,4 +74,6 @@ class ContactPage extends Component{
   }
 }
 
-export default ContactPage;
+export default reduxForm({
+  form: 'contactForm'
+})(ContactPage);
