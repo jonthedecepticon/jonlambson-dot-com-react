@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  FormGroup, ControlLabel, FormControl,
   Grid, Row, Col
 } from 'react-bootstrap';
 import { connect } from 'react-redux';
@@ -8,8 +7,6 @@ import { connect } from 'react-redux';
 import Stripe from '../../components/Stripe/Stripe';
 
 import Card from 'components/Card/Card.jsx';
-import FormInputs from 'components/FormInputs/FormInputs.jsx';
-import Button from 'elements/CustomButton/CustomButton.jsx';
 
 
 class Donate extends Component {

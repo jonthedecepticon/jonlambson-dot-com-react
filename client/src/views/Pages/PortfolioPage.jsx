@@ -6,7 +6,6 @@ import {
     Tooltip
 } from 'react-bootstrap';
 
-import Switch from 'react-bootstrap-switch';
 
 import Card from 'components/Card/Card.jsx';
 
@@ -59,22 +58,22 @@ class PortfolioPage extends Component{
               Recently, I have taken an interest to IoT development. I really enjoy building projects with Raspberry Pi's and Arduino's and playing around with C.
             </h4>
             <div className="socail-media-container">
-              <a href="https://github.com/jonthedecepticon" target="_blank">
+              <a href="https://github.com/jonthedecepticon" target="_blank" rel='noopener noreferrer'>
                 <Button round github>
                   <i className="fa fa-github"></i>
                 </Button>
               </a>
-              <a href="https://www.linkedin.com/in/jon-lambson/" target="_blank">
+              <a href="https://www.linkedin.com/in/jon-lambson/" target="_blank" rel='noopener noreferrer'>
                 <Button round linkedin>
                   <i className="fa fa-linkedin"></i>
                 </Button>
               </a>
-              <a href="https://www.facebook.com/jon.lambson" target="_blank">
+              <a href="https://www.facebook.com/jon.lambson" target="_blank" rel='noopener noreferrer'>
                 <Button round facebook>
                   <i className="fa fa-facebook"> </i>
                 </Button>
               </a>
-              <a href="https://twitter.com/JonLambson" target="_blank">
+              <a href="https://twitter.com/JonLambson" target="_blank" rel='noopener noreferrer'>
                 <Button round twitter>
                   <i className="fa fa-twitter"></i>
                 </Button>
@@ -100,7 +99,7 @@ class PortfolioPage extends Component{
                             <div className="img-container">
                               <img alt="..." src={personalWebsite} style={{height: "100%"}} />
                             </div>
-                            <a href="http://jonlambson.com">
+                            <a href="http://jonlambson.com" target="_blank" rel='noopener noreferrer'>
                               jonlambson.com
                             </a>
                           </td>
@@ -121,7 +120,7 @@ class PortfolioPage extends Component{
                             <div className="img-container">
                               <img alt="..." src={podiumcoin} style={{height: "100%"}} />
                             </div>
-                            <a href="http://podiumcoin.com/">
+                            <a href="http://podiumcoin.com/" target="_blank" rel='noopener noreferrer'>
                               podiumcoin.com
                             </a>
                           </td>

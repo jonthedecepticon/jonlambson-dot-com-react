@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
+import { FormGroup } from 'react-bootstrap';
 import { reduxForm, Field } from 'redux-form';
 
 import SweetAlert from 'react-bootstrap-sweetalert';

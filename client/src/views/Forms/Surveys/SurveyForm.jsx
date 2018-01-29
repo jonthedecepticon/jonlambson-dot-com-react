@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import {
-    Grid, Row, Col,
-    Form, FormGroup
+    Grid, Row, Col, FormGroup
 } from 'react-bootstrap';
 import SurveyField from './SurveyField';
 

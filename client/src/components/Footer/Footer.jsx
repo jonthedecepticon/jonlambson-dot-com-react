@@ -31,7 +31,7 @@ class Footer extends Component {
             </ul>
           </nav>
           <p className="copyright pull-right">
-            <i className="fa fa-code"></i>Web Development by <a href="https://www.linkedin.com/in/jon-lambson/" rel="noreferrer" target="_blank">Jon <strong>Lambson</strong></a> &copy; {1900 + (new Date()).getYear()} All rights reserved.
+            <i className="fa fa-code"></i>Web Development by <a href="https://www.linkedin.com/in/jon-lambson/" rel='noopener noreferrer' target="_blank">Jon <strong>Lambson</strong></a> &copy; {1900 + (new Date()).getYear()} All rights reserved.
           </p>
         </div>
       </footer>

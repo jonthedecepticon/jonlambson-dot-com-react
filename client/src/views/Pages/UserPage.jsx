@@ -13,8 +13,6 @@ import Button from 'elements/CustomButton/CustomButton.jsx';
 
 import avatar from "assets/img/default-avatar.png";
 
-let user = {};
-
 class UserPage extends Component {
   getUser(){
     if (this.props.auth) {

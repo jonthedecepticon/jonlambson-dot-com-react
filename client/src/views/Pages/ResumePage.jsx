@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import { FormGroup, FormControl } from 'react-bootstrap';
-
-import Button from 'elements/CustomButton/CustomButton.jsx';
 
 import resume from 'assets/img/jlresume-compressor.jpg';
 

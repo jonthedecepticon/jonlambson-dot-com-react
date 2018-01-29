@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-    Navbar, Nav, NavItem, NavDropdown, MenuItem,
+    Navbar, Nav, NavDropdown, MenuItem,
     FormGroup, FormControl, InputGroup
 } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
