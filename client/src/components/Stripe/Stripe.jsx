@@ -9,8 +9,8 @@ class Stripe extends Component {
   render() {
     return (
       <StripeCheckout
-        name="Blah"
-        description="Blah blah blah blah..."
+        name="Send Some Surveys"
+        description="Create and send some surveys! Don't worry, Stripe is in test mode."
         amount={500}
         token={token => this.props.handleToken(token)}
         stripeKey={process.env.REACT_APP_STRIPE_KEY}
