@@ -83,7 +83,7 @@ class Dashboard extends Component{
             <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-graph1 text-danger"></i>}
-                statsText="Errors"
+                statsText="Survey Responses"
                 statsValue="23"
                 statsIcon={<i className="fa fa-clock-o"></i>}
                 statsIconText="In the last hour"
@@ -91,9 +91,9 @@ class Dashboard extends Component{
             </Col>
             <Col lg={3} sm={6}>
               <StatsCard
-                bigIcon={<i className="fa fa-twitter text-info"></i>}
-                statsText="Followers"
-                statsValue="+45"
+                bigIcon={<i className="fa fa-paper-plane-o text-info"></i>}
+                statsText="Surveys Sent"
+                statsValue="6"
                 statsIcon={<i className="fa fa-refresh"></i>}
                 statsIconText="Updated now"
               />

@@ -25,10 +25,10 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
           <div>{formValues.body}</div>
         </div>
       </form>
-      <button className="btn btn-warning" onClick={onCancel}>
+      <button className="btn-fill btn-wd btn btn-warning" onClick={onCancel}>
         Edit
       </button>
-      <button className="btn btn-submit" style={{marginLeft: "10px"}} onClick={() => submitSurvey(formValues, history)}>
+      <button className="btn-fill btn-wd btn btn-info" style={{marginLeft: "10px"}} onClick={() => submitSurvey(formValues, history)}>
         Send Survey
       </button>
     </div>

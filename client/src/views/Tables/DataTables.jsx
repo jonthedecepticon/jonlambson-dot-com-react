@@ -11,9 +11,6 @@ import Card from 'components/Card/Card.jsx';
 require('datatables.net-responsive');
 $.DataTable = require('datatables.net-bs');
 
-
-
-
 const dataTable = {
     headerRow: [ 'Name', 'Position', 'Office', 'Age', 'Date', 'Actions' ],
     footerRow: [ 'Name', 'Position', 'Office', 'Age', 'Date', 'Actions' ],
@@ -112,65 +109,63 @@ class DataTables extends Component{
     render() {
         return (
             <div className="main-content">
-                <Grid fluid>
-                    <Row>
-                        <Col md={12}>
-                            <h4 className="title">DataTables.net</h4>
-                            <p className="category">A powerful jQuery plugin handcrafted by our friends from <a href="https://datatables.net/" target="_blank" rel="noopener noreferrer">dataTables.net</a>. It is a highly flexible tool, based upon the foundations of progressive enhancement and will add advanced interaction controls to any HTML table. Please check out the <a href="https://datatables.net/manual/index" target="_blank" rel="noopener noreferrer">full documentation.</a></p>
-                            <Card
-                                title="DataTables.net"
-                                content={
-                                    <div className="fresh-datatables">
-                                        <table id="datatables" ref="main" className="table table-striped table-no-bordered table-hover" cellSpacing="0" width="100%" style={{width:"100%"}}>
-                                            <thead>
-                                                <tr>
-                                                    <th>{ dataTable.headerRow[0] }</th>
-                                                    <th>{ dataTable.headerRow[1] }</th>
-                                                    <th>{ dataTable.headerRow[2] }</th>
-                                                    <th>{ dataTable.headerRow[3] }</th>
-                                                    <th>{ dataTable.headerRow[4] }</th>
-                                                    <th className="disabled-sorting text-right">{ dataTable.headerRow[5] }</th>
-                                                </tr>
-                                            </thead>
-                                            <tfoot>
-                                                <tr>
-                                                    <th>{ dataTable.footerRow[0] }</th>
-                                                    <th>{ dataTable.footerRow[1] }</th>
-                                                    <th>{ dataTable.footerRow[2] }</th>
-                                                    <th>{ dataTable.footerRow[3] }</th>
-                                                    <th>{ dataTable.footerRow[4] }</th>
-                                                    <th className="text-right">{ dataTable.footerRow[5] }</th>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-                                                {
-                                                    dataTable.dataRows.map((prop,key) => {
-                                                        return (
-                                                            <tr key={key}>
-                                                                {
-                                                                    prop.map((prop,key)=> {
-                                                                        return (
-                                                                            <td  key={key}>{prop}</td>
-                                                                        );
-                                                                    })
-                                                                }
-                                                                <td className="text-right">
-                                                                    <a className="btn btn-simple btn-info btn-icon like"><i className="fa fa-heart"></i></a>
-                                                                    <a className="btn btn-simple btn-warning btn-icon edit"><i className="fa fa-edit"></i></a>
-                                                                    <a className="btn btn-simple btn-danger btn-icon remove"><i className="fa fa-times"></i></a>
-                                                                </td>
-                                                            </tr>
-                                                        )
-                                                    })
-                                                }
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                }
-                            />
-                        </Col>
-                    </Row>
-                </Grid>
+              <Grid fluid>
+                <Row>
+                  <Col md={12}>
+                    <Card
+                      title="Surveys"
+                      content={
+                        <div className="fresh-datatables">
+                          <table id="datatables" ref="main" className="table table-striped table-no-bordered table-hover" cellSpacing="0" width="100%" style={{width:"100%"}}>
+                            <thead>
+                              <tr>
+                                <th>{ dataTable.headerRow[0] }</th>
+                                <th>{ dataTable.headerRow[1] }</th>
+                                <th>{ dataTable.headerRow[2] }</th>
+                                <th>{ dataTable.headerRow[3] }</th>
+                                <th>{ dataTable.headerRow[4] }</th>
+                                <th className="disabled-sorting text-right">{ dataTable.headerRow[5] }</th>
+                              </tr>
+                            </thead>
+                            <tfoot>
+                              <tr>
+                                <th>{ dataTable.footerRow[0] }</th>
+                                <th>{ dataTable.footerRow[1] }</th>
+                                <th>{ dataTable.footerRow[2] }</th>
+                                <th>{ dataTable.footerRow[3] }</th>
+                                <th>{ dataTable.footerRow[4] }</th>
+                                <th className="text-right">{ dataTable.footerRow[5] }</th>
+                              </tr>
+                            </tfoot>
+                            <tbody>
+                              {
+                                dataTable.dataRows.map((prop,key) => {
+                                  return (
+                                    <tr key={key}>
+                                      {
+                                        prop.map((prop,key)=> {
+                                          return (
+                                            <td  key={key}>{prop}</td>
+                                          );
+                                        })
+                                      }
+                                      <td className="text-right">
+                                        <a className="btn btn-simple btn-info btn-icon like"><i className="fa fa-heart"></i></a>
+                                        <a className="btn btn-simple btn-warning btn-icon edit"><i className="fa fa-edit"></i></a>
+                                        <a className="btn btn-simple btn-danger btn-icon remove"><i className="fa fa-times"></i></a>
+                                      </td>
+                                    </tr>
+                                  )
+                                })
+                              }
+                            </tbody>
+                          </table>
+                        </div>
+                      }
+                    />
+                  </Col>
+                </Row>
+              </Grid>
             </div>
         );
     }

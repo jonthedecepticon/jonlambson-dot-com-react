@@ -3,7 +3,9 @@ import { reduxForm, Field } from 'redux-form';
 import {
     Grid, Row, Col, FormGroup
 } from 'react-bootstrap';
+
 import SurveyField from './SurveyField';
+import SurveyList from './SurveyList';
 
 import Card from 'components/Card/Card.jsx';
 
@@ -46,6 +48,18 @@ class SurveyForm extends Component {
                   }
                 />
               </form>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={12}>
+              <Card
+                title=""
+                content={
+                  <div className="">
+                    <SurveyList />
+                  </div>
+                }
+              />
             </Col>
           </Row>
         </Grid>

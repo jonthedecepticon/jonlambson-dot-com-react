@@ -18,7 +18,7 @@ var dashRoutes = [
         { path: "/maps/full-screen-maps", name: "Full Screen Map", mini: "FSM", component: FullScreenMap },
         { path: "/maps/vector-maps", name: "Vector Map", mini: "VM", component: VectorMap }]
     },
-    { path: "/forms/survey-new", name: "Survey", icon: "pe-7s-note2", component: SurveyNew },
+    { path: "/forms/survey-new", name: "Surveys", icon: "pe-7s-note2", component: SurveyNew },
     { path: "/calendar", name: "Calendar", icon: "pe-7s-date", component: Calendar },
     { path: "/donate", name: "Purchase Credits", icon:"pe-7s-gift", component: Donate },
     { collapse: true, path: "/pages", name: "Pages", state: "openPages", icon:"pe-7s-news-paper", views:
