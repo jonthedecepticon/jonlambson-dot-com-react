@@ -54,7 +54,7 @@ class PortfolioPage extends Component{
           <div className="about-me-section" style={{marginTop: "-70px"}}>
             <h2>About me...</h2>
             <h4>
-              My name is Jon Lambson, I am a Full Stack Web Developer and just getting into IoT development. I am from Pleasant Grove, Utah. I love being the outdoors, hiking, riding my bicycle, and snowboarding. If I'm not outside I am playing the violin/guitar or I am sitting infront of my computer experimenting with new languages and frameworks.
+              My name is Jon Lambson, I am a Full Stack Web Developer and just getting into IoT Development. I am from Pleasant Grove, Utah. I love being in the outdoors, hiking, riding my road bike, and snowboarding or skateboarding. If I'm not outside I am playing the guitar or I am sitting infront of my computer experimenting with new languages and frameworks.
             </h4>
             <h4 className="">
               Recently, I have taken an interest to IoT development. I really enjoy building projects with Raspberry Pi's and Arduino's and playing around with C.
