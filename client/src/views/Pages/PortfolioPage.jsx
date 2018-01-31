@@ -20,6 +20,7 @@ import magicmirror from 'assets/img/magicmirror.jpg';
 import hardware from 'assets/img/hardware.jpg';
 import dapp from 'assets/img/decentralizedInternet.jpg';
 import podiumcoin from 'assets/img/podiumcoin.png';
+import blog from 'assets/img/blog.png';
 
 class PortfolioPage extends Component{
   constructor(props){
@@ -30,7 +31,8 @@ class PortfolioPage extends Component{
           jonthedecepticonTags: ["node", "javascript", "Raspberry Pi 3", "arduino Uno", "Vuejs", "wit.ai"],
           spotifyCloneTags: ["Vuejs", "PHP", "Mysql", "Sass"],
           magicmirrorTags: ["Raspberry Pi", "electron", "Javascript", "linux"],
-          dappTags: ["React", "Geth", "Web3", "Truffle", "TestRPC", "MetaMask", "Solidity", "Ethereum"]
+          dappTags: ["React", "Geth", "Web3", "Truffle", "TestRPC", "MetaMask", "Solidity", "Ethereum"],
+          reactBlogTags: ["React", "Redux", "Sass"]
       };
   }
   render(){
@@ -97,7 +99,9 @@ class PortfolioPage extends Component{
                         <tr>
                           <td>
                             <div className="img-container">
-                              <img alt="..." src={personalWebsite} style={{height: "100%"}} />
+                              <a href="http://jonlambson.com" target="_blank" rel='noopener noreferrer'>
+                                <img alt="..." src={personalWebsite} style={{height: "100%"}} />
+                              </a>
                             </div>
                             <a href="http://jonlambson.com" target="_blank" rel='noopener noreferrer'>
                               jonlambson.com
@@ -118,7 +122,9 @@ class PortfolioPage extends Component{
                         <tr>
                           <td>
                             <div className="img-container">
-                              <img alt="..." src={podiumcoin} style={{height: "100%"}} />
+                              <a href="http://podiumcoin.com/" target="_blank" rel='noopener noreferrer'>
+                                <img alt="..." src={podiumcoin} style={{height: "100%"}} />
+                              </a>
                             </div>
                             <a href="http://podiumcoin.com/" target="_blank" rel='noopener noreferrer'>
                               podiumcoin.com
@@ -137,9 +143,30 @@ class PortfolioPage extends Component{
                         <tr>
                           <td>
                             <div className="img-container">
+                              <a href="https://jonlambson-blog.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
+                                <img alt="..." src={blog} style={{height: "100%"}}/>
+                              </a>
+                            </div>
+                            <a href="https://jonlambson-blog.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
+                              jonlambson-blog.com
+                            </a>
+                          </td>
+                          <td className="td-name">
+                            <TagsInput value={this.state.reactBlogTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
+                          </td>
+                          <td style={{textAlign: "left"}}>
+                            <h6>Blog</h6>
+                            A simple create, read, update, and delete blog using a RESTful API. Built with React and Redux. This project is just to simply understand React and Redux more.
+                          </td>
+                          { actionsPost }
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div className="img-container">
                               <img alt="..." src={spotify} style={{height: "100%"}}/>
                             </div>
-                            <a>
+                            <a className="text-muted">
                               Coming soon...
                             </a>
                           </td>
@@ -152,12 +179,13 @@ class PortfolioPage extends Component{
                           </td>
                           { actionsPost }
                         </tr>
+
                         <tr>
                           <td>
                             <div className="img-container">
                               <img alt="..." src={dapp} style={{height: "100%"}}/>
                             </div>
-                            <a>
+                            <a className="text-muted">
                               In the works...
                             </a>
                           </td>
@@ -193,7 +221,7 @@ class PortfolioPage extends Component{
                             <div className="img-container">
                               <img alt="..." src={hardware} />
                             </div>
-                            <a href="">
+                            <a className="text-muted">
                               Coming Soon...
                             </a>
                           </td>
