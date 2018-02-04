@@ -21,6 +21,7 @@ import hardware from 'assets/img/hardware.jpg';
 import dapp from 'assets/img/decentralizedInternet.jpg';
 import podiumcoin from 'assets/img/podiumcoin.png';
 import blog from 'assets/img/blog.png';
+import slack from 'assets/img/slack.jpg';
 
 class PortfolioPage extends Component{
   constructor(props){
@@ -31,8 +32,9 @@ class PortfolioPage extends Component{
           jonthedecepticonTags: ["node", "javascript", "Raspberry Pi 3", "arduino Uno", "Vuejs", "wit.ai"],
           spotifyCloneTags: ["Vuejs", "PHP", "Mysql", "Sass"],
           magicmirrorTags: ["Raspberry Pi", "electron", "Javascript", "linux"],
-          dappTags: ["React", "Geth", "Web3", "Truffle", "TestRPC", "MetaMask", "Solidity", "Ethereum"],
-          reactBlogTags: ["React", "Redux", "Sass"]
+          dappTags: ["React", "Geth", "Web3", "Truffle", "TestRPC", "MetaMask", "Solidity", "Ethereum", "webpack"],
+          reactBlogTags: ["React", "Redux", "Sass"],
+          socketIoTags: ["Javascript", "Node", "Express", "socket.io"],
       };
   }
   render(){
@@ -57,7 +59,7 @@ class PortfolioPage extends Component{
               My name is Jon Lambson, I am a Full Stack Web Developer and just getting into IoT Development. I am from Pleasant Grove, Utah. I love being outdoors, flying my drone and recording my hiking, biking and snowboarding/skateboarding adventures. If I'm not outside I am playing the guitar or I am sitting in front of my computer experimenting with new languages and frameworks.
             </h4>
             <h4>
-              Recently, I have taken an interest to IoT Development. I really enjoy building projects with Raspberry Pi's and Arduino's and playing around with C.
+              Recently, I have taken an interest to IoT Development. I really enjoy building projects with Raspberry Pi's and Arduino's!
             </h4>
             <div className="socail-media-container">
               <a href="https://github.com/jonthedecepticon" target="_blank" rel='noopener noreferrer'>
@@ -122,20 +124,41 @@ class PortfolioPage extends Component{
                         <tr>
                           <td>
                             <div className="img-container">
-                              <a href="http://podiumcoin.com/" target="_blank" rel='noopener noreferrer'>
-                                <img alt="..." src={podiumcoin} style={{height: "100%"}} />
+                              <a href="https://websocket-io-chat-app.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
+                                <img alt="..." src={slack} style={{height: "100%"}}/>
                               </a>
                             </div>
-                            <a href="http://podiumcoin.com/" target="_blank" rel='noopener noreferrer'>
-                              podiumcoin.com
+                            <a href="https://websocket-io-chat-app.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
+                              jl-websockets.com
                             </a>
                           </td>
                           <td className="td-name">
-                            <TagsInput value={this.state.podiumcoinTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
+                            <TagsInput value={this.state.socketIoTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
                           </td>
                           <td style={{textAlign: "left"}}>
-                            <h6>Voting / Sharing Platform</h6>
-                            M.E.A.N Stack built from the ground up and hosted with Digital Ocean. This project was built for Daplie, an admin team member would post an article in 3 categories. Articles would be displayed in order of "trending" or most popular. Sharing on Facebook or voting for an article would increase the articles visibility. All information stored and authentication using Firebase. Stripe was implemented for donation to the article owner, but never put into production. <span className="text-muted">**Daplie is the owner of the Firebase account linked to this project, it may be disconnected at any time.**</span>
+                            <h6>Slack Chat App</h6>
+                            A very simple chat app build with socket.io designed to look like Slack. Playing around with websockets, with the intent to learn more about the functionality and implement socket.io in future IoT projects. Open two seperate tabs of this app and chat with a friend, or yourself. See messages and typing status in real time.
+                          </td>
+                          { actionsPost }
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div className="img-container">
+                              <a href="https://dapp-jonlambson.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
+                                <img alt="..." src={dapp} style={{height: "100%"}}/>
+                              </a>
+                            </div>
+                            <a href="https://dapp-jonlambson.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
+                              dapp-jonlambson.com
+                            </a>
+                          </td>
+                          <td className="td-name">
+                            <TagsInput value={this.state.dappTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
+                          </td>
+                          <td style={{textAlign: "left"}}>
+                            <h6>Decentralized Application</h6>
+                            Attempting to keep up with the latest trends and hot new frameworks, I am working on building out a simple decentralized app, where I can develop, compile, test Smart Contracts.
                           </td>
                           { actionsPost }
                         </tr>
@@ -164,20 +187,20 @@ class PortfolioPage extends Component{
                         <tr>
                           <td>
                             <div className="img-container">
-                              <a href="https://dapp-jonlambson.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
-                                <img alt="..." src={dapp} style={{height: "100%"}}/>
+                              <a href="http://podiumcoin.com/" target="_blank" rel='noopener noreferrer'>
+                                <img alt="..." src={podiumcoin} style={{height: "100%"}} />
                               </a>
                             </div>
-                            <a href="https://dapp-jonlambson.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
-                              dapp-jonlambson.com
+                            <a href="http://podiumcoin.com/" target="_blank" rel='noopener noreferrer'>
+                              podiumcoin.com
                             </a>
                           </td>
                           <td className="td-name">
-                            <TagsInput value={this.state.dappTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
+                            <TagsInput value={this.state.podiumcoinTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
                           </td>
                           <td style={{textAlign: "left"}}>
-                            <h6>Decentralized Application</h6>
-                            Attempting to keep up with the latest trends and hot new frameworks, I am working on building out a simple decentralized app, where I can develop, compile, test Smart Contracts.
+                            <h6>Voting / Sharing Platform</h6>
+                            M.E.A.N Stack built from the ground up and hosted with Digital Ocean. This project was built for Daplie, an admin team member would post an article in 3 categories. Articles would be displayed in order of "trending" or most popular. Sharing on Facebook or voting for an article would increase the articles visibility. All information stored and authentication using Firebase. Stripe was implemented for donation to the article owner, but never put into production. <span className="text-muted">**Daplie is the owner of the Firebase account linked to this project, it may be disconnected at any time.**</span>
                           </td>
                           { actionsPost }
                         </tr>
