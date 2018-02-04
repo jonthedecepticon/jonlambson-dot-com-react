@@ -164,6 +164,27 @@ class PortfolioPage extends Component{
                         <tr>
                           <td>
                             <div className="img-container">
+                              <a href="https://dapp-jonlambson.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
+                                <img alt="..." src={dapp} style={{height: "100%"}}/>
+                              </a>
+                            </div>
+                            <a href="https://dapp-jonlambson.herokuapp.com/" target="_blank" rel='noopener noreferrer'>
+                              dapp-jonlambson.com
+                            </a>
+                          </td>
+                          <td className="td-name">
+                            <TagsInput value={this.state.dappTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
+                          </td>
+                          <td style={{textAlign: "left"}}>
+                            <h6>Decentralized Application</h6>
+                            Attempting to keep up with the latest trends and hot new frameworks, I am working on building out a simple decentralized app, where I can develop, compile, test Smart Contracts.
+                          </td>
+                          { actionsPost }
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div className="img-container">
                               <img alt="..." src={spotify} style={{height: "100%"}}/>
                             </div>
                             <a className="text-muted">
@@ -176,25 +197,6 @@ class PortfolioPage extends Component{
                           <td style={{textAlign: "left"}}>
                             <h6>Spotify Clone</h6>
                             I think Spotify is one of my favorite companies and products out there. In this project I am using my friend's design and building a replica of Spotify. Features include Sign up/Login, controling the music with all the usual controls such as play, pause, skip, previous, shuffle, repeat etc. Create and customize playlists. I am building this project because I want to improve my Vuejs skills and better understand PHP and MYSQL.
-                          </td>
-                          { actionsPost }
-                        </tr>
-
-                        <tr>
-                          <td>
-                            <div className="img-container">
-                              <img alt="..." src={dapp} style={{height: "100%"}}/>
-                            </div>
-                            <a className="text-muted">
-                              In the works...
-                            </a>
-                          </td>
-                          <td className="td-name">
-                            <TagsInput value={this.state.dappTags} tagProps={{className: 'react-tagsinput-tag tag-azure' }}/>
-                          </td>
-                          <td style={{textAlign: "left"}}>
-                            <h6>Decentralized Application</h6>
-                            Attempting to keep up with the latest trends and hot new frameworks, I am working on building out a simple decentralized app, where I can develop, compile, test Smart Contracts.
                           </td>
                           { actionsPost }
                         </tr>
