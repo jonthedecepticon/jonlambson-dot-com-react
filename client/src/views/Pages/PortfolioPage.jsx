@@ -137,7 +137,7 @@ class PortfolioPage extends Component{
                           </td>
                           <td style={{textAlign: "left"}}>
                             <h6>Slack Chat App</h6>
-                            A very simple chat app build with socket.io designed to look like Slack. Playing around with websockets, with the intent to learn more about the functionality and implement socket.io in future IoT projects. Open two seperate tabs of this app and chat with a friend, or yourself. See messages and typing status in real time.
+                            A very simple chat app build with Socket.IO on an express server, designed to look like Slack. Playing around with WebSockets, with the intent to learn more about the functionality and implement socket.io in future IoT projects. Open two seperate tabs of this app and chat with a friend! This app will use WebSockets real time data flow to keep connections open between multiple browsers or tabs. See messages sent in real time and see when someone else's typing a message.
                           </td>
                           { actionsPost }
                         </tr>
