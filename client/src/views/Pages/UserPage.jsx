@@ -18,17 +18,26 @@ class UserPage extends Component {
     if (this.props.auth) {
       const user = this.props.auth
       return user;
+    } else {
+      const user = 'Test User'
+      return user;
     }
   }
   getUserName(){
     if (this.props.auth) {
       const user_name = this.props.auth.displayName;
       return user_name;
+    } else {
+      const user_name = 'Test User';
+      return user_name;
     }
   }
   getUserEmail(){
     if (this.props.auth) {
-      const user_email= this.props.auth.emails[0].value;
+      const user_email = this.props.auth.emails[0].value;
+      return user_email;
+    } else {
+      const user_email = 'email@gmail.com';
       return user_email;
     }
   }

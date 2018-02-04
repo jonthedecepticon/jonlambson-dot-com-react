@@ -7691,6 +7691,9 @@ form label {
   padding-top: 0;
   padding-bottom: 0; }
 
+.mobile-only {
+  display: none; }
+
 @media (min-width: 992px) {
   .navbar-form {
     margin: 12px 0;

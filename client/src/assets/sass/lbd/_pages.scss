@@ -149,6 +149,13 @@
       .about-me-section {
         color: #FFFFFF;
       }
+
+      @media only screen
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 3) {
+
+      }
+
     }
 
     .user-profile{
@@ -233,4 +240,8 @@
             padding-bottom: 0;
         }
     }
+}
+
+.mobile-only {
+  display: none;
 }

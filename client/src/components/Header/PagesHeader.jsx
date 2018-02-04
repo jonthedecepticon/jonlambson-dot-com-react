@@ -38,6 +38,12 @@ class PagesHeader extends Component{
         // eslint-disable-next-line
         return (
           <ul className="nav navbar-nav navbar-right">
+            <li>
+              <NavLink to={'/dashboard'} className="nav-link">
+                <i className="fa fa-th-list"></i>
+                <p>Dashboard</p>
+              </NavLink>
+            </li>
             <li className={this.activeRoute('login-page')}>
               <NavLink to={'/pages/login-page'} className="nav-link">
                 <i className="fa fa-drivers-license-o"></i>
@@ -57,12 +63,6 @@ class PagesHeader extends Component{
         // eslint-disable-next-line
         return (
           <ul className="nav navbar-nav navbar-right">
-            <li>
-              <NavLink to={'/dashboard'} className="nav-link">
-                <i className="fa fa-th-list"></i>
-                <p>Dashboard</p>
-              </NavLink>
-            </li>
             <li>
               <a href="/api/logout" className="nav-link">
                 <i className="fa fa-times-circle-o"></i>

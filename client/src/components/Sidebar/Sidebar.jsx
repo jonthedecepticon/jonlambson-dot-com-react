@@ -92,6 +92,9 @@ class Sidebar extends Component{
     if (this.props.auth) {
       const user = this.props.auth
       return user.displayName;
+    } else {
+      const user = "Test user";
+      return user;
     }
   }
   render(){
