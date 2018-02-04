@@ -79,9 +79,9 @@ class PagesHeader extends Component{
           <Navbar collapseOnSelect inverse className="navbar-primary navbar-transparent navbar-absolute">
             <Navbar.Header>
               <Navbar.Brand>
-                <NavLink to={'/pages/home-page'} className="nav-link">
+                <a href="/pages/home-page" className="nav-link">
                   { this.state.width > 429 ? "JL":"JL" }
-                </NavLink>
+                </a>
               </Navbar.Brand>
               <Navbar.Toggle onClick={this.mobileSidebarToggle} />
             </Navbar.Header>
