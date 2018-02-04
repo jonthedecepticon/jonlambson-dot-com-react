@@ -595,8 +595,10 @@
     // .navbar-collapse.collapse{
     //     height: 100% !important;
     // }
-    .navbar-collapse.collapse.in {
+    .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
         display: block !important;
+        background-image: url("../img/full-screen-image-2.jpg");
+        background-size: 100% 100%;
     }
     .navbar-header .collapse, .navbar-toggle {
         display:block !important;

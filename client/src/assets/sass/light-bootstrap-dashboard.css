@@ -8305,8 +8305,10 @@ form label {
     margin: 0 auto 10px; }
   .media-post .media-body {
     width: 100%; }
-  .navbar-collapse.collapse.in {
-    display: block !important; }
+  .navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+    display: block !important;
+    background-image: url("../img/full-screen-image-2.jpg");
+    background-size: 100% 100%; }
   .navbar-header .collapse, .navbar-toggle {
     display: block !important; }
   .navbar-header {
