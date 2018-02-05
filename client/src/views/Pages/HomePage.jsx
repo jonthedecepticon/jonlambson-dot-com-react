@@ -66,7 +66,7 @@ class HomePage extends Component{
             <span
               className="txt-rotate"
               data-period="2000"
-            data-rotate='[ "Life!", "Full Stack Development.", "IoT Development.", "Javascript.", "Ruby on Rails.", "Swift.", "Design." ]'>
+            data-rotate='[ "Life!", "Technology", "Full Stack Development.", "IoT Development.", "Javascript.", "Ruby on Rails.", "Swift.", "Design." ]'>
             </span>
           </h4>
         </div>
