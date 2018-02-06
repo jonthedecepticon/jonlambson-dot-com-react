@@ -33,7 +33,7 @@ class PortfolioPage extends Component{
         spotifyCloneTags: ["Vuejs", "PHP", "Mysql", "Sass"],
         magicmirrorTags: ["Raspberry Pi", "electron", "Javascript", "linux"],
         dappTags: ["React", "Geth", "Web3", "Truffle", "TestRPC", "MetaMask", "Solidity", "Ethereum", "webpack"],
-        reactBlogTags: ["React", "Redux", "Sass"],
+        reactBlogTags: ["React", "Redux-form", "Redux", "Sass"],
         socketIoTags: ["Javascript", "Node", "Express", "socket.io"],
     };
   }

@@ -14,7 +14,7 @@ import bgImageBackup4 from 'assets/img/full-screen-image-4.jpg';
 import pagesRoutes from 'routes/pages.jsx';
 
 function getRandomNum() {
-  return Math.floor(Math.random() * 60);
+  return Math.floor(Math.random() * 100);
 }
 
 let bgImage = `https://source.unsplash.com/collection/468125/${getRandomNum()}`;
