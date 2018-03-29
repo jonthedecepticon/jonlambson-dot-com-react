@@ -17,7 +17,7 @@ function getRandomNum() {
   return Math.floor(Math.random() * 62);
 }
 
-let bgImage = `https://source.unsplash.com/collection/225019/${getRandomNum()}`;
+let bgImage = `https://source.unsplash.com/collection/114/${getRandomNum()}`;
 
 $.get(bgImage)
     .done(function() {
