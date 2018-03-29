@@ -14,10 +14,10 @@ import bgImageBackup4 from 'assets/img/full-screen-image-4.jpg';
 import pagesRoutes from 'routes/pages.jsx';
 
 function getRandomNum() {
-  return Math.floor(Math.random() * 62);
+  return Math.floor(Math.random() * 427);
 }
 
-let bgImage = `https://source.unsplash.com/collection/114/${getRandomNum()}`;
+let bgImage = `https://source.unsplash.com/collection/182565/${getRandomNum()}`;
 
 $.get(bgImage)
     .done(function() {
